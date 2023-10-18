@@ -2,8 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  border: 0;
 }
 
 .bgimg-1,
@@ -15,30 +14,41 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bgimg-1 {
   background-image: url("./assets/Cover.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+  background-image: url("./assets/img2.png");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
+  background-image: url("");
   min-height: 400px;
+}
+
+.v1 {
+  position: relative;
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
 }
 
 .caption {
   position: absolute;
-  margin-left: 71.5%;
-  margin-top: 25%;
+  margin-left: 74%;
+  margin-top: 30%;
+  transform: rotate(-5deg);
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
+  background-color: #000000;
+  color: #000000;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
@@ -49,6 +59,13 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+}
+
+.para1 {
+  letter-spacing: 5px;
+  font: 30px "Lato", sans-serif;
+
+  color: #ffffff;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -64,6 +81,32 @@ h3 {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
   animation: drawPath 3s forwards;
+}
+
+.digital_rain {
+  position: relative;
+  margin: 0;
+  background-color: #000000;
+}
+
+.heart_beat {
+  position: relative;
+  bottom: 50%;
+  height: 0;
+}
+
+#my_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 47%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
 }
 
 @keyframes drawPath {
