@@ -5,9 +5,37 @@ html {
   border: 0;
 }
 
+nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: "Lobster", sans-serif;
+  height: 8vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.thisItem a {
+  font-size: 50px;
+  color: rgb(242, 75, 175);
+  padding: 2.5vw;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.thisItem a:hover {
+  font-size: 55px;
+  color: #00ffff;
+  transition: all 300ms ease-in-out;
+}
+
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -16,71 +44,107 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url("./assets/Cover.jpg");
+  background-image: url("./assets/BR1.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("./assets/img2.png");
-  min-height: 400px;
+  background-image: url("./assets/BR2.png");
+  min-height: 650px;
 }
 
 .bgimg-3 {
-  background-image: url("");
-  min-height: 400px;
+  background-image: url("./assets/her1.jpg");
+  min-height: 750px;
+}
+
+.bgimg-4 {
+  background-image: url("./assets/her2.jpg");
+  min-height: 650px;
+}
+
+.bgimg-5 {
+  background-image: url("./assets/her3.jpg");
+  min-height: 750px;
+}
+
+.bgimg-6 {
+  background-image: url("./assets/BR3.png");
+  min-height: 100%;
 }
 
 .v1 {
   position: relative;
-  color: #ddd;
   background-color: #282e34;
   text-align: center;
-  padding: 50px 80px;
-  text-align: justify;
+  padding: 10px 30px;
 }
 
-.caption {
+.caption1 {
   position: absolute;
   margin-left: 74%;
   margin-top: 30%;
   transform: rotate(-5deg);
 }
 
-.caption span.border {
-  background-color: #000000;
-  color: #000000;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+p.p1 {
+  letter-spacing: 1px;
+  font-size: 45px;
+  text-align: center;
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-.para1 {
-  letter-spacing: 5px;
-  font: 30px "Lato", sans-serif;
-
+p.p1 span.B {
+  font-family: "Noto Sans Osmanya", sans-serif;
+  font-style: italic;
   color: #ffffff;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    background-attachment: scroll;
-  }
+p.p1 span.M {
+  font-size: 65px;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #1c42ff;
+}
+
+p.p1 span.M1 {
+  font-size: 65px;
+  font-family: "Monoton", sans-serif;
+  color: #1c42ff;
+}
+
+p.p1 span.H {
+  font-size: 65px;
+  font-family: "Dancing Script", cursive;
+  color: #eaff00;
+}
+
+p.p1 span.L {
+  font-size: 65px;
+  font-family: "Great Vibes", cursive;
+  color: #ff0000;
+}
+
+p.p1 span.L1 {
+  font-size: 65px;
+  font-family: "Lobster", sans-serif;
+  color: #ff0000;
+}
+
+p.p1 span.L2 {
+  font-size: 65px;
+  font-family: "Dancing Script", cursive;
+  color: #ff0000;
+}
+
+p.p1 span.L3 {
+  font-size: 65px;
+  font-family: "Shadows Into Light", cursive;
+  color: #ff0000;
 }
 
 #mypath {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: drawPath 3s forwards;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: drawPath 13s forwards;
 }
 
 .digital_rain {
@@ -109,8 +173,42 @@ video {
   mix-blend-mode: screen;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1;
+  font-family: "Couture", sans-serif;
+  transition: all 300ms ease-in-out;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #ffa21b;
+  transition: all 300ms ease-in-out;
+}
+
 @keyframes drawPath {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
   }
 }
