@@ -13,7 +13,7 @@ nav {
   font-family: "Lobster", sans-serif;
   height: 8vh;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .thisItem a {
@@ -173,6 +173,15 @@ p.p1 span.L3 {
   background-color: #000000;
 }
 
+.digital_rain iframe {
+  position: absolute;
+  top: 20%;
+  left: 22.5%;
+  width: 55%;
+  height: 65%;
+  border: none;
+}
+
 .heart_beat {
   position: relative;
   bottom: 50%;
@@ -191,6 +200,25 @@ video {
   width: 47%;
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;
+}
+
+.conclusion-text {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.conclusion-text p {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  height: 50%;
+  font-size: 30px;
+  font-family: "Noto Sans Osmanya", sans-serif;
+  font-style: italic;
+  color: rgb(255, 0, 0);
+  margin-top: -12.5px;
+  margin-bottom: 12.5vh;
 }
 
 footer {
@@ -213,34 +241,6 @@ footer a {
 footer a:hover {
   color: #ffa21b;
   transition: all 300ms ease-in-out;
-}
-
-.conclusion {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.conclusion iframe {
-  position: absolute;
-  top: 25%;
-  left: 17.5%;
-  width: 65%;
-  height: 65%;
-}
-
-.conclusion-text {
-  position: relative;
-  width: 50%;
-  left: 25%;
-  height: 50%;
-}
-
-.conclusion-text p {
-  position: relative;
-  font-size: 30px;
-  font-family: "Noto Sans Osmanya", sans-serif;
-  font-style: italic;
 }
 
 @keyframes drawPath {
