@@ -35,7 +35,11 @@ nav {
 .bgimg-3,
 .bgimg-4,
 .bgimg-5,
-.bgimg-6 {
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -44,33 +48,53 @@ nav {
 }
 
 .bgimg-1 {
-  background-image: url("./assets/BR1.jpg");
+  background-image: url("../LOVE/assets/BR1.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("./assets/BR2.png");
+  background-image: url("../LOVE/assets/BR2.png");
   min-height: 650px;
 }
 
 .bgimg-3 {
-  background-image: url("./assets/her1.jpg");
+  background-image: url("../LOVE/assets/her1.jpg");
   min-height: 750px;
 }
 
 .bgimg-4 {
-  background-image: url("./assets/her2.jpg");
+  background-image: url("../LOVE/assets/her2.jpg");
   min-height: 650px;
 }
 
 .bgimg-5 {
-  background-image: url("./assets/her3.jpg");
+  background-image: url("../LOVE/assets/her3.jpg");
   min-height: 750px;
 }
 
 .bgimg-6 {
-  background-image: url("./assets/BR3.png");
+  background-image: url("../LOVE/assets/BR3.png");
   min-height: 100%;
+}
+
+.bgimg-7 {
+  background-image: url("../Content/Assets/Loneliness&Brain.png");
+  min-height: 750px;
+}
+
+.bgimg-8 {
+  background-image: url("../Content/Assets/Objectophilia.png");
+  min-height: 750px;
+}
+
+.bgimg-9 {
+  background-image: url("../Content/Assets/AI&Romance.jpg");
+  min-height: 750px;
+}
+
+.bgimg-10 {
+  background-image: url("../Content/Assets/AlgorithmicBias.png");
+  min-height: 750px;
 }
 
 .v1 {
@@ -105,6 +129,43 @@ nav {
   font-size: 100px;
   color: pink;
   transition: all 300ms ease-in-out;
+}
+
+.caption3 {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 25%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e6cbcb;
+}
+
+.caption4 {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #243aff;
+}
+
+.caption5 {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 22%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #acf6fc;
+}
+
+.caption6 {
+  position: absolute;
+  left: 20%;
+  right: 20.5%;
+  top: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-blend-mode: lighten;
 }
 
 p.p1 {
@@ -184,7 +245,7 @@ p.p1 span.L3 {
 
 .heart_beat {
   position: relative;
-  bottom: 50%;
+  bottom: 55%;
   height: 0;
 }
 
